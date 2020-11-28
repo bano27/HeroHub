@@ -20,9 +20,19 @@ public class App {
             return new ModelAndView(new HashMap(), "herohub.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/", (request, response) -> {
+        get("/squadhub", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(new HashMap(), "squadhub.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/heroForm", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(new HashMap(), "heroForm.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/squadForm", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(new HashMap(), "squadForm.hbs");
         }, new HandlebarsTemplateEngine());
     }
 }
