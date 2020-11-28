@@ -3,12 +3,26 @@
  */
 package HeroHub;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.util.HashMap;
 
+import java.util.Map;
+
+import spark.ModelAndView;
+
+import static spark.Spark.*;
+
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        staticFileLocation("/public");
+
+        get("/", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(new HashMap(), "herohub.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(new HashMap(), "squadhub.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
