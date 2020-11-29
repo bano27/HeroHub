@@ -1,0 +1,19 @@
+{{#partial "content"}}
+    <form action="/squadhub">
+        <div class="form-group">
+            <label for="SquadName">Name your Squad</label>
+            <input id="SquadName" name="SquadName" class="form-control" type="text" placeholder="Enter SquadName">
+        </div>
+        <div class="form-group">
+            <label for="Mission_Control">Set Mission</label>
+            <input id="Mission_Control" name="Mission_Control" class="form-control" type="text" placeholder="Set Mission">
+        </div>
+        <div class="form-group">
+            <label for="Squad_Size">Number of hero's</label>
+            <input id="Squad_Size" name="Squad_Size" class="form-control" type="number" placeholder="Enter Number of hero's">
+        </div>
+        <button type="submit" class="btn">Generate Squad</button>
+    </form>
+{{/partial}}
+
+{{>layout.hbs}}
