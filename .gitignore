@@ -28,3 +28,13 @@ build
 *.pro
 *.MF
 *.li
+
+gradlew
+gradlew.bat
+settings.gradle
+
+HeroHub.iml
+.gitattributes
+
+out/
+gradle/
