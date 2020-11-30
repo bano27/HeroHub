@@ -20,4 +20,9 @@ public class MyHeroTest {
         MyHero newCharacterHero = MyHero.newHeroCharacter();
         assertEquals("heat", newCharacterHero.getFlaw());
     }
+
+    @Test public void testGetsAgeOfNewCharacter(){
+        MyHero newCharacterHero = MyHero.newHeroCharacter();
+        assertEquals( 17, newCharacterHero.getAge());
+    }
 }
