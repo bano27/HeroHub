@@ -25,4 +25,9 @@ public class MyHeroTest {
         MyHero newCharacterHero = MyHero.newHeroCharacter();
         assertEquals( 17, newCharacterHero.getAge());
     }
+
+    @Test public void testGetsAllInstancesOfNewCharacter(){
+        MyHero newCharacterHero = MyHero.newHeroCharacter();
+        assertTrue(MyHero.getAllInstances().contains(newCharacterHero));
+    }
 }
