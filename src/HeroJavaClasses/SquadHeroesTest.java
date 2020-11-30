@@ -10,4 +10,9 @@ public class SquadHeroesTest {
         SquadHeroes newSquad = SquadHeroes.newHeroSquad();
         assertEquals("Marvel",newSquad.getSquadName());
     }
+
+    @Test public void testGetsMissionControlOfNewHeroSquad(){
+        SquadHeroes newSquad = SquadHeroes.newHeroSquad();
+        assertEquals("Protect Earth",newSquad.getMissionControl());
+    }
 }
