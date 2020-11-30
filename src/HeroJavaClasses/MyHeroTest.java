@@ -15,4 +15,9 @@ public class MyHeroTest {
         MyHero newCharacterHero = MyHero.newHeroCharacter();
         assertEquals("ice breath", newCharacterHero.getSpecial_power());
     }
+
+    @Test public void testGetsFlawOfNewCharacter(){
+        MyHero newCharacterHero = MyHero.newHeroCharacter();
+        assertEquals("heat", newCharacterHero.getFlaw());
+    }
 }
