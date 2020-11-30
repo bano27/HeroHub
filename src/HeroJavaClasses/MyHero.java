@@ -15,6 +15,7 @@ public class MyHero {
         this.special_power = special_power;
         this.flaw = flaw;
         this.age = age;
+        this.id = id;
         instances.add(this);
         this.id = instances.size();
     }
