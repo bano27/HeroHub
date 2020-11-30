@@ -10,4 +10,9 @@ public class MyHeroTest {
         MyHero newCharacterHero = MyHero.newHeroCharacter();
         assertEquals("IceBreath", newCharacterHero.getHeroName());
     }
+
+    @Test public void testGetsSpecialPowerOfNewCharacter(){
+        MyHero newCharacterHero = MyHero.newHeroCharacter();
+        assertEquals("ice breath", newCharacterHero.getSpecial_power());
+    }
 }
