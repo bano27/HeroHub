@@ -30,4 +30,9 @@ public class MyHeroTest {
         MyHero newCharacterHero = MyHero.newHeroCharacter();
         assertTrue(MyHero.getAllInstances().contains(newCharacterHero));
     }
+
+    @Test public void testGetsIdOfNewCharacter(){
+        MyHero newCharacterHero = MyHero.newHeroCharacter();
+        assertEquals( 1, newCharacterHero.getId());
+    }
 }

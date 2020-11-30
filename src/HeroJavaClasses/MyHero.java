@@ -10,7 +10,7 @@ public class MyHero {
     private int id;
     private static ArrayList<MyHero> instances = new ArrayList<>();
 
-    public MyHero(String heroName, String special_power, String flaw, Integer age){
+    public MyHero(String heroName, String special_power, String flaw, Integer age, Integer id){
         this.heroName = heroName;
         this.special_power = special_power;
         this.flaw = flaw;
@@ -25,9 +25,9 @@ public class MyHero {
     public int getAge(){return this.age;}
     public int getId(){return this.id;}
     public static ArrayList<MyHero> getAllInstances(){return instances;}
-    public static MyHero findHeroById(int id){return instances.get(id-1);}
+    public static MyHero findHeroById(int id){return instances.get(id);}
 
     public static MyHero newHeroCharacter(){
-        return new MyHero("IceBreath", "ice breath", "heat",17);
+        return new MyHero("IceBreath", "ice breath", "heat",17, 1);
     }
 }
