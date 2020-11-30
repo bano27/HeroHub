@@ -27,4 +27,8 @@ public class SquadHeroes {
     public static ArrayList<SquadHeroes> getInstances(){return instances;}
     public static SquadHeroes findBySquadId(int squadId){return instances.get(squadId-1);}
     public void setSquadMembers(MyHero newMember){squadMembers.add(newMember);}
+
+    public static SquadHeroes newHeroSquad(){
+        return new SquadHeroes("Marvel", "Protect Earth", 22);
+    }
 }
