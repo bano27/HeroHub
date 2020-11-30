@@ -5,3 +5,26 @@
 build
 
 .idea/
+
+*.yml
+*.xml
+*.xhtml
+*.9.png
+*.aab
+*.aar
+*.aidl
+*.txt
+*.ttf
+*.trace
+*.svg
+*.snippet
+*.smali
+*.sh
+*.rs
+*.rnc
+*.regexp
+*.psd
+*.properties
+*.pro
+*.MF
+*.li
