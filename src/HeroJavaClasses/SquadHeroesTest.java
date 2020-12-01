@@ -35,4 +35,11 @@ public class SquadHeroesTest {
         SquadHeroes newSquad = SquadHeroes.newHeroSquad();
         assertEquals( 0, SquadHeroes.findBySquadId(newSquad.getSquadId()).getSquadId());
     }
+
+    @Test public void testGetsSquadMembersOfNewHeroSquad(){
+        MyHero newCharacterHero = MyHero.newHeroCharacter();
+        SquadHeroes newSquad = SquadHeroes.newHeroSquad();
+        newSquad.setSquadMembers(newCharacterHero);
+        assertEquals("heat", newSquad.getSquadMembers().get(0).getFlaw());
+    }
 }
