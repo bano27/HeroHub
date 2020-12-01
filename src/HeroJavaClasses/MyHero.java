@@ -10,12 +10,11 @@ public class MyHero {
     private int id;
     private static ArrayList<MyHero> instances = new ArrayList<>();
 
-    public MyHero(String heroName, String special_power, String flaw, Integer age, Integer id){
+    public MyHero(String heroName, String special_power, String flaw, Integer age){
         this.heroName = heroName;
         this.special_power = special_power;
         this.flaw = flaw;
         this.age = age;
-        this.id = id;
         instances.add(this);
         this.id = instances.size();
     }
@@ -29,6 +28,6 @@ public class MyHero {
     public static MyHero findHeroById(int id){return instances.get(id);}
 
     public static MyHero newHeroCharacter(){
-        return new MyHero("IceBreath", "ice breath", "heat",17, 1);
+        return new MyHero("IceBreath", "ice breath", "heat",17);
     }
 }
