@@ -25,7 +25,7 @@ public class SquadHeroes {
     public int getSquadId(){return this.squadId;}
     public ArrayList<MyHero> getSquadMembers(){return squadMembers;}
     public static ArrayList<SquadHeroes> getInstances(){return instances;}
-    public static SquadHeroes findBySquadId(int squadId){return instances.get(squadId-1);}
+    public static SquadHeroes findBySquadId(int squadId){return instances.get(squadId);}
     public void setSquadMembers(MyHero newMember){squadMembers.add(newMember);}
 
     public static SquadHeroes newHeroSquad(){

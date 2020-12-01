@@ -30,4 +30,9 @@ public class SquadHeroesTest {
         SquadHeroes newSquad = SquadHeroes.newHeroSquad();
         assertTrue(SquadHeroes.getInstances().contains(newSquad));
     }
+
+    @Test public void testGetsSquadByFindingIdOfNewHeroSquad(){
+        SquadHeroes newSquad = SquadHeroes.newHeroSquad();
+        assertEquals( 0, SquadHeroes.findBySquadId(newSquad.getSquadId()).getSquadId());
+    }
 }
