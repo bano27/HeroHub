@@ -20,4 +20,9 @@ public class SquadHeroesTest {
         SquadHeroes newSquad = SquadHeroes.newHeroSquad();
         assertEquals(22,newSquad.getSquadSize());
     }
+
+    @Test public void testGetsSquadIdOfNewHeroSquad(){
+        SquadHeroes newSquad = SquadHeroes.newHeroSquad();
+        assertEquals(0,newSquad.getSquadId());
+    }
 }
