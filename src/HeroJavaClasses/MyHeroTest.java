@@ -35,4 +35,9 @@ public class MyHeroTest {
         MyHero newCharacterHero = MyHero.newHeroCharacter();
         assertEquals( 1, newCharacterHero.getId());
     }
+
+    @Test public void testGetsCharacterByFindingIdOfNewCharacter(){
+        MyHero newCharacterHero = MyHero.newHeroCharacter();
+        assertEquals( 1, MyHero.findHeroById(newCharacterHero.getId()).getId());
+    }
 }

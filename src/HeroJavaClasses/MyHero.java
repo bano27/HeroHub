@@ -25,7 +25,7 @@ public class MyHero {
     public int getAge(){return this.age;}
     public int getId(){return this.id;}
     public static ArrayList<MyHero> getAllInstances(){return instances;}
-    public static MyHero findHeroById(int id){return instances.get(id);}
+    public static MyHero findHeroById(int id){return instances.get(id-1);}
 
     public static MyHero newHeroCharacter(){
         return new MyHero("IceBreath", "ice breath", "heat",17);
